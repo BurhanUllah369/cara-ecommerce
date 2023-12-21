@@ -1,0 +1,131 @@
+.featured {
+    margin: 100px auto;
+    width: 85%;
+}
+
+.featured h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.featured .description {
+    font-weight: 500;
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.featured ul {
+    list-style: none;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.featured ul li {
+    width: 21%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    position: relative;
+}
+
+.featured ul li:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.featured ul li:hover h4 {
+    color: #0B8176;
+}
+
+.featured img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.featured li p {
+    font-weight: 500;
+    color: lightgray;
+    margin-bottom: 10px;
+}
+
+.featured li h4 {
+    margin-bottom: 5px;
+}
+
+.featured li .star-icon {
+    color: rgb(240, 119, 6);
+    font-size: 12px;
+}
+
+.featured li h3 {
+    margin: 10px 0;
+    color: #0B8176;
+}
+
+.featured li button {
+    cursor: pointer;
+}
+
+.featured .cart-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #0B8176;
+    background-color: #D2D7D2;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    .featured ul li {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 946px) {
+    .featured ul li {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .featured ul {
+        justify-content: space-evenly;
+    }
+
+    .featured ul li {
+        width: 90%;
+    }
+
+    .featured h1 {
+        font-size: 36px;
+    }
+
+    .featured .description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .featured {
+        width: 95%;
+    }
+
+    .featured h1 {
+        font-size: 26px;
+    }
+
+    .featured .description {
+        font-size: 12px;
+    }
+
+    .featured ul li {
+        width: 95%;
+    }
+}

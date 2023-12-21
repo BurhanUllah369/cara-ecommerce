@@ -1,0 +1,113 @@
+.newsletter {
+    margin-top: 80px;
+    background-color: #031E41;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-image: url("../../public/img/banner/b14.png");
+    background-repeat: no-repeat;
+    padding-top: 70px;
+}
+
+.newsletter-content {
+    margin: auto;
+    width: 85%;
+    list-style: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter-content section {
+    width: 50%;
+}
+
+.newsletter-content section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.newsletter-content section p {
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+}
+
+.newsletter-content section p span {
+    color: #CB9152;
+}
+
+.newsletter-content form button, input {
+    padding: 15px 25px;
+}
+
+.newsletter-content form input {
+    padding-right: 100px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter-content form button {
+    outline: none;
+    border: none;
+    background-color: #0B8176;
+    color: white;
+    font-weight: 600;
+    border-radius: 0 5px 5px 0;
+}
+
+@media screen and (max-width: 1070px) {
+    .newsletter {
+        padding-top: 20px;
+    }
+    .newsletter-content {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-evenly;
+    }
+
+    .newsletter form {
+        width: 100%;
+    }
+
+    .newsletter-content form input {
+        width: 70%;
+    }
+
+    .newsletter-content form button {
+        width: 30%;
+    }
+
+    .newsletter-content section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .newsletter {
+        height: 230px;
+    }
+
+    .newsletter-content {
+        width: 95%;
+    }
+
+    .newsletter-content form button {
+        width: 35%;
+        font-size: 12px;
+    }
+
+    .newsletter-content form input {
+        width: 65%;
+        padding-right: 0;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .newsletter-content form button {
+        padding: 15px;
+    }
+}

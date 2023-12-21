@@ -1,0 +1,35 @@
+.banner {
+    width: 100%;
+    height: 350px;
+    background-image: url("../../public/img/banner/b2.jpg");
+    margin-bottom: 100px;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+
+.banner h2 {
+    margin: 20px 0;
+}
+
+.banner h2 span {
+    color: red;
+}
+
+.banner button {
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: #0b8176;
+    color: white;
+}
+
+@media screen and (max-width: 320px) {
+    .banner h2 {
+        font-size: 20px;
+    }
+}

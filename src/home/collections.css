@@ -1,0 +1,59 @@
+.collections {
+    margin: 40px auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    list-style: none;
+}
+
+.collections li {
+    width: 30%;
+    position: relative;
+}
+
+.collections img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.collections .collections-content {
+    padding-left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.collections .collections-content h3 {
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.collections .collections-content p {
+    color: red;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 1180px) {
+    .collections li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .collections {
+        width: 95%;
+    }
+
+    .collections .collections-content h3 {
+        font-size: 18px;
+    }
+
+    .collections .collections-content p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,221 @@
+.cart {
+    width: 100%;
+}
+
+.cart-table {
+    width: 85%;
+    margin: 50px auto;
+    overflow-x: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.table-heading {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-top: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230);
+    padding: 20px 0;
+}
+
+.table-heading li {
+    width: 16%;
+    display: flex;
+    justify-content: center;
+}
+
+.table-body {
+    color: gray;
+}
+
+.table-body ul li {
+    margin-top: 20px;
+}
+
+.table-body li ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-body li ul li {
+    display: flex;
+    justify-content: center;
+    width: 16%;
+    font-size: 12px;
+}
+
+.table-body img {
+    width: 100px;
+}
+
+.table-body .cancel-icon {
+    cursor: pointer;
+}
+
+.table-body input {
+    width: 100px;
+    border: 2px solid lightgray;
+    outline: none;
+}
+
+.table-body .remove-item {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.table-body .empty-shop {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #0B8176;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 2px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.table-body .increment, .decrement {
+    outline: none;
+    border: none;
+    color: black;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.checkout {
+    margin: 70px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coupon, .total {
+    width: 45%;
+}
+
+.checkout h1 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.checkout .coupon form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.coupon form input {
+    width: 80%;
+    outline: none;
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    color: gray;
+}
+
+.coupon form button {
+    width: 20%;
+    outline: none;
+    border: none;
+    background-color: #0B8176;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.total {
+    border: 2px solid lightgray;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.total h1 {
+    margin-bottom: 20px;
+}
+
+.total p {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    font-size: 14px;
+}
+
+.total p span {
+    width: 50%;
+    padding: 20px 0;
+}
+
+.total p span:last-child {
+    text-align: end;
+    border-left: 1px solid lightgray;
+}
+
+
+.total p:nth-child(4) {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.total button {
+    padding: 10px 20px;
+    align-self: flex-start;
+    background-color: #0B8176;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .checkout {
+        flex-direction: row;
+    }
+
+    .total p  {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .table-heading, .table-body li ul {
+        width: 1050px;
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .table-heading, .table-body li ul {
+        width: 800px;
+        overflow-x: auto;
+    }
+
+    .checkout {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .checkout section {
+        width: 100%;
+    }
+
+    .coupon form input {
+        width: 70%;
+    }
+
+    .coupon form button {
+        width: 30%;
+    }
+}

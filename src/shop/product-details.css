@@ -1,0 +1,100 @@
+.product-component {
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-images {
+    width: 34%;
+}
+
+.product-details {
+    width: 63%;
+    padding-top: 20px;
+}
+
+.product-main-image {
+    width: 100%;
+}
+
+.product-varieties {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-varieties img {
+    width: calc((100% / 4) - 5px);
+    cursor: pointer;
+}
+
+.product-details p:first-child {
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: rgb(53, 53, 53);
+}
+
+.product-details h3 {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.product-details h2 {
+    margin-bottom: 15px;
+}
+
+.product-details select {
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.product-details select:focus {
+    outline: none;
+}
+
+.product-details input {
+    width: 60px;
+    padding: 10px;
+    outline: none;
+    margin-right: 10px;
+}
+
+.product-details button {
+    padding: 12px 30px;
+    font-size: 12px;
+    background-color: #0B8176;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.product-details h3 {
+    margin-top: 40px;
+}
+
+.product-details p:last-child {
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+    .product-component, .product-varieties , .product-images {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .product-component {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .product-component section {
+        width: 100%;
+    }
+}
